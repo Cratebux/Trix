@@ -701,10 +701,6 @@ video {
   top: 20%;
 }
 
-.top-\[40\%\]{
-  top: 40%;
-}
-
 .isolate{
   isolation: isolate;
 }
@@ -4306,10 +4302,6 @@ h3 {
 
   .lg\:w-\[30vw\]{
     width: 30vw;
-  }
-
-  .lg\:w-\[313px\]{
-    width: 313px;
   }
 
   .lg\:w-\[35vw\]{
