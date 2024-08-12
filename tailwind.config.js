@@ -27,6 +27,12 @@ module.exports = {
         Dpurple: '#0A0612',
         Lpurple: '#8A2BE2',
         Mpurple: '#471675',
+
+        // For Admin Panel
+        'input-bg': '#FAFAFA',
+        'gray-1': '#F6F8F3',
+        'purple-1': '#8A2BE2',
+        'purple-trasparent': '#8a2be214',
       },
     },
   },
