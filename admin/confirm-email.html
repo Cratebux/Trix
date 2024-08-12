@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/svg/logo.svg" />
+
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet" />
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Flowbite -->
+
+    <script
+      async
+      src="https://kit.fontawesome.com/edd99ad8ab.js"
+      crossorigin="anonymous"></script>
+
+    <link href="/admin/styles/output.css" rel="stylesheet" />
+    <title>Admin - Confirm Email</title>
+  </head>
+  <body class="grid place-items-center bg-gray-1 w-screen h-screen">
+    <form class="flex flex-col gap-8 lg:w-[35%] bg-white rounded-3xl p-6 py-10">
+      <button onclick='window.location.href = "./index.html"'>
+        <img
+          src="/admin/assets/svg/back-btn.svg"
+          alt="back btn icon"
+          width="40"
+          height="40" />
+      </button>
+
+      <div class="space-y-2">
+        <h1 class="text-2xl font-medium">Enter Code</h1>
+        <p class="text-gray">
+          Please enter the 6 digit code we sent to
+          <br />
+          <span class="text-black">riderezzy@gmail.com</span>
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-6 gap-3 items-center [&_input]:rounded-xl">
+        <input
+          class="text-center py-5 text-xl focus-within:ring-purple-1 focus-within:border-purple-1 font-semibold text-purple-1"
+          type="text"
+          name="digit1"
+          id="digit1"
+          maxlength="1"
+          required
+          autofocus />
+        <input
+          class="text-center py-5 text-xl focus-within:ring-purple-1 focus-within:border-purple-1 font-semibold text-purple-1"
+          type="text"
+          name="digit2"
+          id="digit2"
+          maxlength="1"
+          required />
+        <input
+          class="text-center py-5 text-xl focus-within:ring-purple-1 focus-within:border-purple-1 font-semibold text-purple-1"
+          type="text"
+          name="digit3"
+          id="digit3"
+          maxlength="1"
+          required />
+        <input
+          class="text-center py-5 text-xl focus-within:ring-purple-1 focus-within:border-purple-1 font-semibold text-purple-1"
+          type="text"
+          name="digit4"
+          id="digit4"
+          maxlength="1"
+          required />
+        <input
+          class="text-center py-5 text-xl focus-within:ring-purple-1 focus-within:border-purple-1 font-semibold text-purple-1"
+          type="text"
+          name="digit5"
+          id="digit5"
+          maxlength="1"
+          required />
+        <input
+          class="text-center py-5 text-xl focus-within:ring-purple-1 focus-within:border-purple-1 font-semibold text-purple-1"
+          type="text"
+          name="digit6"
+          id="digit6"
+          maxlength="1"
+          required />
+      </div>
+
+      <div class='flex items-center justify-between'>
+        <button
+          class="p-3 text-purple-1 font-semibold bg-purple-trasparent flex items-center gap-3 rounded-2xl">
+          <img
+            src="/admin/assets/svg/clipboard-icon.svg"
+            alt="clipboard icon"
+            width="20"
+            height="20" />
+          Paste Code
+        </button>
+
+        <span class='text-gray'>Resend code in 47s</span>
+      </div>
+    </form>
+    
+    <script>
+      function handleInput(e) {
+        const input = e.target;
+        if (input.value.length === 1 && input.nextElementSibling) {
+          input.nextElementSibling.focus();
+        } else if (input.value.length === 0 && input.previousElementSibling) {
+          input.previousElementSibling.focus();
+        }
+      }
+
+      // Add event listeners to inputs for auto-tabbing
+      const inputs = document.querySelectorAll('input[id^="digit"]');
+      inputs.forEach((input) => {
+        input.addEventListener('input', handleInput);
+      });
+
+      // Clear inputs on window load
+      window.addEventListener('load', () => {
+        inputs.forEach((input) => {
+          input.value = '';
+        });
+      });
+    </script>
+  </body>
+</html>

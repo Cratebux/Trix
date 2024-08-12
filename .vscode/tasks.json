@@ -7,6 +7,11 @@
       "label": "compile tailwind",
       "type": "shell",
       "command": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    },
+    {
+      "label": "compile admin styles",
+      "type": "shell",
+      "command": "npx tailwindcss -i ./admin/styles/input.css -o ./admin/styles/output.css --watch"
     }
   ]
 }

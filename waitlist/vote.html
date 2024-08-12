@@ -1,66 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/svg/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/svg/logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script defer src="/waitlist/script.js"></script>
-  <script src="https://kit.fontawesome.com/edd99ad8ab.js" crossorigin="anonymous"></script>
-  <link href="/src/output.css" rel="stylesheet" />
-  <title>Trix - Waitlist Vote</title>
-</head>
+    <!-- Font Awesome -->
+    <script
+      async
+      src="https://kit.fontawesome.com/edd99ad8ab.js"
+      crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
 
-<body class="bg-purplebg text-white max-w-[100vw] lg:max-h-[150vh] overflow-x-hidden">
-  <header class="header-paddings flex items-center justify-between">
-    <img class="w-40" src="/svg/logo-trix-white.svg" alt="trix logo" />
-    <div class="flex items-center gap-8">
-      <a class="hover:underline" href="/src/pages/about.html">About</a>
-      <img width="40" src="/svg/histogram.svg" alt="histogram svg" />
-    </div>
-  </header>
+    <link href="/src/output.css" rel="stylesheet" />
+    <script defer src="/waitlist/script.js"></script>
+    <title>Trix - Waitlist Vote</title>
+  </head>
 
-  <section class="relative text-center lg:space-y-10 space-y-6 md:px-10 md:pt-14 pt-10 px-6">
-    <h1 class="lg:text-5xl md:text-4xl text-3xl font-semibold">Vote for Your Reward</h1>
-    <p class="lg:w-1/2 w-[70%] mx-auto text-sm">
-      Choose between TON and NotCoin as your preferred reward.
-    </p>
-
-    <div class="lg:p-10 p-6 flex items-center justify-center [&_button]:text-white">
-      <button class="ton -mr-2"><img width="200" src="/waitlist-assets/ton.svg" alt="ton"></button>
-      <div class="w-[40%] h-fit flex justify-stretch">
-        <span class="tonVal w-1/2 p-2 h-full bg-sky-600">20</span>
-        <span class="notCoinVal w-1/2 p-2  h-full bg-black">30</span>
+  <body
+    class="bg-purplebg text-white max-w-[100vw] lg:max-h-[150vh] overflow-x-hidden">
+    <header class="header-paddings flex items-center justify-between">
+      <img class="w-40" src="/svg/logo-trix-white.svg" alt="trix logo" />
+      <div class="flex items-center gap-8">
+        <a class="hover:underline" href="/src/pages/about.html">About</a>
+        <img width="40" src="/svg/histogram.svg" alt="histogram svg" />
       </div>
-      <button class="notCoin -ml-2"><img width="200" src="/waitlist-assets/not-coin.svg" alt="not coin"></button>
+    </header>
+
+    <section
+      class="relative text-center lg:space-y-10 space-y-6 md:px-10 md:pt-14 pt-10 px-6">
+      <h1 class="lg:text-5xl md:text-4xl text-3xl font-semibold">
+        Vote for Your Reward
+      </h1>
+      <p class="lg:w-1/2 w-[70%] mx-auto text-sm">
+        Choose between TON and NotCoin as your preferred reward.
+      </p>
+
+      <div
+        class="lg:p-10 p-6 flex items-center justify-center [&_button]:text-white">
+        <button class="ton voteBtn -mr-2">
+          <img width="200" src="/waitlist-assets/ton.svg" alt="ton" />
+        </button>
+        <div class="w-[40%] h-fit flex justify-stretch">
+          <span class="tonVal w-1/2 p-2 h-full bg-sky-600">20</span>
+          <span class="notCoinVal w-1/2 p-2 h-full bg-black">30</span>
+        </div>
+        <button class="notCoin voteBtn -ml-2">
+          <img width="200" src="/waitlist-assets/not-coin.svg" alt="not coin" />
+        </button>
+      </div>
+
+      <img
+        class="mx-auto"
+        src="/waitlist-assets/voted-count.png"
+        alt="vote count"
+        width="265" />
+      <p class="text-[#ffffff80] lg:w-1/2 mx-auto">
+        Increase your chances of getting your desired coin by completing tasks
+        and sharing your unique referral link. The more tasks you complete and
+        the more friends you refer, the higher your chances!
+      </p>
+    </section>
+
+    <div
+      class="mt-10 w-full flex flex-col md:flex-row gap-4 items-center justify-between header-paddings">
+      <p>&2024 Trix. All rights reserved</p>
+      <ul class="flex items-center justify-center gap-6">
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/facebook.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/twitter.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/instagram.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/tiktok.svg" alt=""
+          /></a>
+        </li>
+      </ul>
     </div>
 
-    <img class="mx-auto" src="/waitlist-assets/voted-count.png" alt="vote count" width="265" />
-    <p class="text-[#ffffff80] lg:w-1/2 mx-auto">
-      Increase your chances of getting your desired coin by completing tasks
-      and sharing your unique referral link. The more tasks you complete and
-      the more friends you refer, the higher your chances!
-    </p>
-  </section>
+    <dialog
+      class="modal rounded-lg bg-purple text-white w-[90%] lg:w-[50vw] text-center space-y-10 px-16 py-20">
+      <h2 class="text-3xl font-semibold w-full">Vote successfully added</h2>
+      <p>
+        Use the code below to refer friends and increase your chances of earning
+        more TRIX Points
+      </p>
 
-  <div class="mt-10 w-full flex flex-col md:flex-row gap-4 items-center justify-between header-paddings">
-    <p>&2024 Trix. All rights reserved</p>
-    <ul class="flex items-center justify-center gap-6">
-      <li>
-        <a href=""><img width="40" src="/waitlist-assets/facebook.svg" alt="" /></a>
-      </li>
-      <li>
-        <a href=""><img width="40" src="/waitlist-assets/twitter.svg" alt="" /></a>
-      </li>
-      <li>
-        <a href=""><img width="40" src="/waitlist-assets/instagram.svg" alt="" /></a>
-      </li>
-      <li>
-        <a href=""><img width="40" src="/waitlist-assets/tiktok.svg" alt="" /></a>
-      </li>
-    </ul>
-  </div>
-</body>
+      <div
+        class="bg-[#00000080] relative w-full overflow-hidden space-y-6 md:space-y-0 md:w-[85%] mx-auto rounded-lg text-white py-3">
+        <div class="flex items-center gap-6">
+          <button class="copyBtn mx-6">
+            <img
+              src="/waitlist-assets/copy-icon.svg"
+              width="33"
+              alt="copy icon" />
+          </button>
+          <!-- outline-0 border-0 -->
+          <input
+            class="user-code bg-transparent border-0 p-0 w-fit text-center md:text-left"
+            value="TEXJD#12345"
+            readonly="readonly"
+            type="text" />
+        </div>
+        <button
+          class="md:absolute top-0 right-0 bottom-0 font-semibold bg-white px-8 py-3 h-full rounded-lg text-purple">
+          Share Code
+        </button>
+      </div>
+      <button class="modalClose mt-10 rounded-md">
+        Go to Dashboard
+        <span
+          ><img
+            class="inline-block ms-2"
+            width="25"
+            src="/waitlist-assets/arrow-white.svg"
+            alt="arrow icon"
+        /></span>
+      </button>
+    </dialog>
 
+    <script>
+      let voteBtn = document.querySelectorAll('.voteBtn');
+      let modal = document.querySelector('.modal');
+      let modalClose = document.querySelector('.modalClose');
+
+      voteBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          setTimeout((params) => {
+            modal.showModal();
+          }, 2000);
+        });
+      });
+
+      modalClose.addEventListener('click', () => {
+        modal.close();
+        setTimeout(() => {
+          window.location.href = '/waitlist/wallet.html';
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>

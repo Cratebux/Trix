@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/svg/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/src/pages/global.js"></script>
     <script
       src="https://kit.fontawesome.com/edd99ad8ab.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <link href="/src/output.css" rel="stylesheet" />
     <title>Trix - Waitlist Home</title>
   </head>
-  <body class="bg-purple text-white max-w-[100vw] max-h-[150vh] overflow-x-hidden">
+
+  <body
+    class="bg-purplebg text-white max-w-[100vw] lg:max-h-[150vh] overflow-x-hidden">
     <header class="header-paddings flex items-center justify-between">
       <img class="w-40" src="/svg/logo-trix-white.svg" alt="trix logo" />
       <div class="flex items-center gap-8">
@@ -22,37 +22,33 @@
       </div>
     </header>
 
-    <section class="relative text-center space-y-10 md:px-10 md:pt-14 pt-10 px-6">
-      <h1 class="text-5xl font-semibold">
+    <section
+      class="relative text-center lg:space-y-10 space-y-6 md:px-10 md:pt-14 pt-10 px-6">
+      <h1 class="lg:text-5xl md:text-4xl text-3xl font-semibold">
         Unlock Rewards <br />
         for Every Purchase
       </h1>
-      <p class="w-1/2 mx-auto">
+      <p class="lg:w-1/2 mx-auto">
         Shop at your favorite stores, upload your receipts, and earn points for
         every transaction. Enjoy exclusive discounts, gift cards, and more!
         <br />
         Get Started today!
       </p>
-      <button class="text-purple bg-white px-6 py-3 rounded-lg">
-          <a href="/waitlist/sign-up.html">
-          Join Our Waitlist
-        </a>
-        </button>
+
+      <button
+        onclick='window.location.href = "/waitlist/sign-up.html"'
+        class="text-purple bg-white px-6 py-3 rounded-lg">
+        Join Our Waitlist
+      </button>
       <div class="relative">
         <img
-          class="mx-auto w-[80%]"
+          class="mx-auto lg:w-[80%] w-full"
           src="/waitlist-assets/home-image.png"
-          alt="image"
-        />
-        <img
-          class="absolute top-[40%] right-0"
-          width="313"
-          src="/waitlist-assets/home-stuff.svg"
-          alt="home stuff"
-        />
+          alt="image" />
       </div>
 
-      <div class="absolute z-10 bottom-0 left-0 right-0 flex items-center justify-between header-paddings">
+      <div
+        class="lg:absolute z-10 bottom-0 left-0 right-0 w-full flex flex-col md:flex-row gap-4 items-center justify-between header-paddings">
         <p>&2024 Trix. All rights reverved</p>
         <ul class="flex items-center justify-center gap-6">
           <li>
