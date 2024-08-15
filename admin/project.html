@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/svg/logo.svg" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <title>Admin - Projects</title>
+</head>
+<body>
+    <section class="flex">
+        <div class=" w-[20rem]">
+            <img class="py-10 w-[8rem] mx-auto" src="/admin/assets/svg/logo.svg" alt="">
+            <div class="h-[.1rem] w-full bg-gray "></div>
+                <div class="mt-10 flex flex-col gap-5">
+                    <a href="/admin/home.html" class="hover:bg-Lpurple ml-5 hover:text-white rounded flex py-2 pl-5 items-center gap-3 bg-white cursor-pointer">
+                        <img src="/admin/assets/svg/Icon.svg" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="" class="hover:bg-Lpurple ml-5 hover:text-white rounded flex py-2 pl-5 items-center gap-3 bg-white cursor-pointer">
+                        <img src="/admin/assets/svg/people.svg" alt="">
+                        <p>Accounts</p>
+                    </a>
+                    <a href="/admin/project.html" class="hover:bg-Lpurple ml-5 hover:text-white rounded flex py-2 pl-5 items-center gap-3 bg-white cursor-pointer">
+                        <img src="/admin/assets/svg/Project.svg" alt="">
+                        <p>Projects Insight</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+        </div>
+
+        <div class="w-full h-screen bg-pale">
+            <header class="flex justify-between w-full bg-Lpurple  pt-10 px-[2rem] h-[12rem]">
+                <div class="text-white">
+                    <div>
+                        <h1 class="font-bold text-3xl">Welcome back, <span class="text-mgray">EZZY!</span></h1>
+                        <p class="text-[.7rem] text-mgray">A quick glance at key metrices and recent activities</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl h-max py-3 px-5 bg-white">
+                    <div class="w-[300px] flex h-max bg-paleGray gap-3 py-2 pl-5 rounded-xl">
+                        <img class="w-[1.5rem]" src="/admin/assets/svg/search-icon.svg" alt="">
+                        <input class="bg-paleGray outline-none border-none w-[230px] text-black" placeholder="Search" type="search" name="" id="">
+                    </div>
+                    <div class="flex gap-3 items-center">
+                        <img class="w-[1.5rem]" src="/admin/assets/svg/notification-bell.svg" alt="">
+                        <img class="w-[1.5rem]" src="/admin/assets/svg/moon-solid 1.svg" alt="">
+                        <img class="w-[1.5rem]" src="/admin/assets/Image/profile.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <main class=" bg-white mx-[2rem] pt-10 mt-10 rounded-xl">
+                <div class="border-b-[.1rem] flex gap-5 text-[1.2rem] px-5 border-paleGray pb-5">
+                    <a class="text-gray text-opacity-70 hover:text-purplebg hover:pb-3 w-max hover:border-b-[2px] hover:border-purplebg font-semibold" href="/admin/project.html">One Time Tasks</a>
+                    <a class="text-gray text-opacity-70 hover:text-purplebg hover:pb-3 w-max hover:border-b-[2px] hover:border-purplebg font-semibold" href="/admin/recurring-tasks.html">Recurring Tasks</a>
+                </div>
+                <div class="mx-5 flex items-center justify-between py-5">
+                    <div class="w-[300px] flex h-max bg-paleGray bg-opacity-40 gap-3 py-3 pl-5 rounded-xl">
+                        <img class="w-[1.5rem]" src="/admin/assets/svg/search-icon.svg" alt="">
+                        <input class="bg-paleGray bg-opacity-0 outline-none border-none w-[230px]" placeholder="Search" type="search" name="" id="">
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="text-gray gap-2 flex items-center rounded-xl bg-gray bg-opacity-5 py-3 px-5"><img class="bg-gray px-[.3rem] rounded py-[.2rem] bg-opacity-20" src="/admin/assets/svg/Filter.svg" alt="">Filters</span>
+                        <span class="text-gray gap-2 flex items-center rounded-xl bg-gray bg-opacity-5 py-3 px-5"><img class="bg-gray px-[.3rem] rounded py-[.2rem] bg-opacity-20" src="/admin/assets/svg/file-download (2).svg" alt="">Download</span>
+                        <span class="text-gray gap-2 flex items-center rounded-xl bg-gray bg-opacity-5 py-3 px-5"><img class="bg-gray px-[.3rem] rounded py-[.2rem] bg-opacity-20" src="/admin/assets/svg/one-to-one.svg" alt="">Payout Ratio</span>
+                    </div>   
+                </div>
+                <div class="flex">
+                    <table class="w-full border-none">
+                        <thead>
+                            <tr class="bg-mgray bg-opacity-50 text-[.8rem] font-semibold px-5">
+                                <td class="border-none py-3 pl-5">PROJECT NAME</td>
+                                <td class="border-none">DIFFICULT</td>
+                                <td class="border-none">PUBLISH DATE</td>
+                                <td class="border-none">REWARD</td>
+                                <td class="border-none">ACCOUNTS DONE</td>
+                                <td class="border-none">TOTAL COMPLETION RATE</td>
+                                <td class="border-none"><img src="/admin/assets/svg/more.svg" alt=""></td>
+                                
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr class="text-[1rem] border-b-[.1rem]">
+                                <td class="border-none pl-5 ">
+                                    <div class="flex items-center py-5 gap-3">
+                                        <input class="" type="checkbox" name="" id="">
+                                        <h1>Connect Wallet to Waitlist</h1>
+                                    </div>
+                                </td>
+                                <td class="border-none "><h1 class="px-5 py-2 rounded text-purple bg-pale w-max">Normal</h1></td>
+                                <td class="border-none">20 July 2024</td>
+                                <td class="border-none">10 Points</td>
+                                <td class="border-none ">
+                                    <img class="" src="/admin/assets/Image/group.png" alt="">
+                                </td>
+                                <td class="border-none ">
+                                    <div class="flex items-center gap-2">
+                                        <h1>22%</h1> 
+                                        <div class="flex bg-paleGray w-[8rem] rounded h-[.4remrem]">
+                                            <div class="w-[2rem] bg-purple h-[.4rem] rounded"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-none">
+                                    <img src="/admin/assets/svg/more.svg" alt="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-white flex justify-between mx-[2rem] px-5 py-5">
+                    <div class="flex items-center gap-3">
+                        <p class="text-gray">Show result:</p>
+                        <span class="border-[.1rem] border-paleGray rounded flex gap-2 py-[.4rem] px-3">10 <img src="/admin/assets/svg/chevron-down.svg" alt=""> </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="/admin/assets/svg/chevron-left.svg" alt="">
+                        <p class="bg-purple bg-opacity-20 px-[1.2rem] text-xl py-2 rounded-xl text-purple text-opacity-70">1</p>
+                        <img src="/admin/assets/svg/chevron-right.svg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+</body>
+</html>
