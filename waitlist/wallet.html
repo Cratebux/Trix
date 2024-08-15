@@ -37,43 +37,129 @@
                 </button>
                     
                     <!-- Dropdown menu -->
-                    <div id="dropdownBottom" class="z-10 text-center hidden bg-Mpurple pt-5 rounded-lg shadow w-[300px] px-5">
+                    <div id="dropdownBottom" class=" text-center hidden absolute bg-Mpurple pt-5 pb-5 rounded-lg shadow w-[20rem] px-5">
                         <h1 class="text-xl font-bold">Current Rankings</h1>
-                        <p>3 Days to go</p>
-                        <div class="flex justify-between items-center">
+                        <p class="text-[.9rem]">3 Days to go</p>
+                        <div class="flex justify-between gap-10 items-center">
                             <span class="flex gap-3 items-center">
-                                <img class="w-[2rem]" src="/img/avatar-image-1.png" alt="">
-                                <p><span>#1</span> John Doe</p>
+                                <img class="w-[2rem]" src="/svg/wicon.svg" alt="">
+                                <p class="text-[.9rem]"><span>#1</span> John Doe</p>
                             </span>
-                            <span>
-                                <h1>200pts</h1>
-                                <img src="" alt="">
+                            <span class="flex items-center gap-1">
+                                <h1 class="text-[.9rem]">200pts</h1>
+                                <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
                             </span>
                         </div>
+                        <div class="flex justify-between gap-10 mt-5 items-center">
+                          <span class="flex gap-3 items-center">
+                              <img class="w-[2rem]" src="/svg/wicon.svg" alt="">
+                              <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+                          </span>
+                          <span class="flex items-center gap-1">
+                              <h1 class="text-[.9rem]">200pts</h1>
+                              <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+                          </span>
+                        </div>
+                        <div class="flex justify-between gap-10 mt-5 items-center">
+                          <span class="flex gap-3 items-center">
+                              <img class="w-[2rem]" src="/waitlist-assets/user2.svg" alt="">
+                              <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+                          </span>
+                          <span class="flex items-center gap-1">
+                              <h1 class="text-[.9rem]">200pts</h1>
+                              <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+                          </span>
+                      </div><div class="flex justify-between gap-10 mt-5 items-center">
+                        <span class="flex gap-3 items-center">
+                            <img class="w-[2rem]" src="/svg/wicon.svg" alt="">
+                            <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <h1 class="text-[.9rem]">200pts</h1>
+                            <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+                        </span>
+                      </div>
+                      <div class="flex justify-between gap-10 mt-5 items-center">
+                        <span class="flex gap-3 items-center">
+                            <img class="w-[2rem]" src="/waitlist-assets/user2.svg" alt="">
+                            <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <h1 class="text-[.9rem]">200pts</h1>
+                            <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+                        </span>
+                    </div>
                     </div>
             </li>
           </ul>
         </nav>
         <!-- Mobile nav bar -->
         <div class="lg:hidden z-10">
-          <button class="openBtn size-10">
-            <img src="/svg/icon-hamburger-dark.svg" alt="icon hamburger" />
-          </button>
-          <button class="closeBtn hidden relative z-30 size-10">
-            <img src="/svg/icon-close-dark.svg" alt="icon close" />
-          </button>
+
+          
+
+<button class="openBtn" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"><img src="/svg/bar.svg" alt=""></button>
+  <button class="closeBtn hidden relative z-30 size-10">
+    <img src="/svg/icon-close-dark.svg" alt="icon close" />
+  </button>
   
-          <ul
-            class="menu hidden flex-col z-20 text-center items-center justify-center gap-6 absolute h-screen top-0 left-0 right-0 bg-[#ffffffc0] text-black [&_li]:text-xl">
-            <li><a href="/src/pages/home.html">About</a></li>
-            <li>Tasks</li>
-            <li>Surveys</li>
-            <li>
-              <a href="/src/pages/sign-up.html">
-                <img src="/svg/bar.svg" alt="">
-              </a>
-            </li>
-          </ul>
+  <!-- Dropdown menu -->
+  <div id="dropdownHover" class="z-10 hidden bg-Mpurple text-center items-center flex flex-col w-full h-screen rounded-lg shadow dark:bg-gray-700">
+    <h1 class="text-xl font-bold">Current Rankings</h1>
+    <p class="text-[.9rem]">3 Days to go</p>
+    <div class="flex gap-10 items-center">
+        <span class="flex gap-3 items-center">
+            <img class="w-[2rem]" src="/svg/wicon.svg" alt="">
+            <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+        </span>
+        <span class="flex items-center gap-1">
+            <h1 class="text-[.9rem]">200pts</h1>
+            <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+        </span>
+    </div>
+    <div class="flex gap-10 mt-5 items-center">
+      <span class="flex gap-3 items-center">
+          <img class="w-[2rem]" src="/svg/wicon.svg" alt="">
+          <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+      </span>
+      <span class="flex items-center gap-1">
+          <h1 class="text-[.9rem]">200pts</h1>
+          <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+      </span>
+    </div>
+    <div class="flex gap-10 mt-5 items-center">
+      <span class="flex gap-3 items-center">
+          <img class="w-[2rem]" src="/waitlist-assets/user2.svg" alt="">
+          <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+      </span>
+      <span class="flex items-center gap-1">
+          <h1 class="text-[.9rem]">200pts</h1>
+          <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+      </span>
+  </div><div class="flex gap-10 mt-5 items-center">
+    <span class="flex gap-3 items-center">
+        <img class="w-[2rem]" src="/svg/wicon.svg" alt="">
+        <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+    </span>
+    <span class="flex items-center gap-1">
+        <h1 class="text-[.9rem]">200pts</h1>
+        <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+    </span>
+  </div>
+  <div class="flex gap-10 mt-5 items-center">
+    <span class="flex gap-3 items-center">
+        <img class="w-[2rem]" src="/waitlist-assets/user2.svg" alt="">
+        <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+    </span>
+    <span class="flex items-center gap-1">
+        <h1 class="text-[.9rem]">200pts</h1>
+        <img class="w-[1rem]" src="/svg/Polygon.svg" alt="">
+    </span>
+</div>
+  </div>
+          <!-- <button class="closeBtn hidden relative z-30 size-10">
+            <img src="/svg/icon-close-dark.svg" alt="icon close" />
+          </button> -->
         </div>
         <!-- Mobile nav bar -->
       </header>
