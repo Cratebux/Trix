@@ -17,6 +17,7 @@
     <script
       src="https://kit.fontawesome.com/edd99ad8ab.js"
       crossorigin="anonymous"></script>
+      <script defer src="/waitlist/handleSubmit.js"></script>
     <link href="/src/output.css" rel="stylesheet" />
     <title>Trix - Waitlist Sign Up</title>
   </head>
@@ -75,12 +76,10 @@
             required />
         </div>
 
-        <!-- <select title="Which best describes you?" class="p-4 bg-[#0a0a0a66] w-full rounded-lg hover:cursor-pointer"> -->
         <select
-          id="countries"
+          id="user_preference"
           class="bg-[#0a0a0a66] cursor-pointer mb-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
           name="desc"
-          id="desc"
           required>
           <option selected disabled hidden>Which best describes you?</option>
           <option
@@ -219,10 +218,6 @@
     </dialog>
 
     <script>
-      // Handle form submission
-      let form = document.querySelector('.form');
-      let modal = document.querySelector('.modal');
-      let modalClose = document.querySelector('.modalClose');
       let copyBtn = document.querySelector('.copyBtn');
 
       function Copy() {
@@ -235,18 +230,6 @@
       }
 
       copyBtn.addEventListener('click', () => Copy());
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        modal.showModal();
-      });
-
-      modalClose.addEventListener('click', () => {
-        modal.close();
-        setTimeout(() => {
-          window.location.href = '/waitlist/vote.html';
-        }, 2000);
-      });
     </script>
   </body>
 </html>
