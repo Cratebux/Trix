@@ -20,20 +20,20 @@
   </head>
 <body class="bg-Lpurple">
     <header class="header-paddings text-white flex items-center justify-between">
-        <img class="w-[10rem]" src="/svg/wlogo.svg" alt="trix logo" />
-        <nav class="hidden lg:inline-block">
-          <ul class="flex items-center text-xl gap-6 mr-6">
-            <li>About</li>
-            <li>Tasks</li>
-            <li class="mr-10">Surveys</li>
-            <li>
-                <a href="/src/pages/sign-up.html">
-                    <img class="w-[3rem]" src="/svg/bar.svg" alt="">
-                  </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Mobile nav bar -->
+      <img class="w-[2rem] lg:w-[5rem] flex" src="/svg/wlogo.svg" alt="trix logo" />
+      <nav class="hidden lg:inline-block">
+        <ul class="flex items-center text-xl gap-6 mr-6">
+          <li>About</li>
+          <li>Tasks</li>
+          <li class="mr-10">Surveys</li>
+          <li>
+              <a href="/src/pages/sign-up.html">
+                  <img class="w-[3rem]" src="/svg/bar.svg" alt="">
+                </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile nav bar -->
         <div class="lg:hidden z-10">
           <button class="openBtn size-10">
             <img src="/svg/icon-hamburger-dark.svg" alt="icon hamburger" />
@@ -41,21 +41,16 @@
           <button class="closeBtn hidden relative z-30 size-10">
             <img src="/svg/icon-close-dark.svg" alt="icon close" />
           </button>
-  
           <ul
-            class="menu hidden flex-col z-20 text-center items-center justify-center gap-6 absolute h-screen top-0 left-0 right-0 bg-[#ffffffc0] text-black [&_li]:text-xl">
+            class="menu hidden flex-col z-20 text-left justify-center px-5 text-white gap-6 absolute h-[10rem] py-5 top-5 mx-5 left-0 right-0 bg-Darkpurple rounded ">
+            <h1 class="text-2xl">Menu</h1>
             <li><a href="/src/pages/home.html">About</a></li>
-            <li>Tasks</li>
-            <li>Surveys</li>
-            <li>
-              <a href="/src/pages/sign-up.html">
-                <img src="/svg/bar.svg" alt="">
-              </a>
-            </li>
+            <li><a href="/waitlist/tasks.html">Tasks</a></li>
+            <li><a href="/waitlist/survey.html">Surveys</a></li>
           </ul>
         </div>
-        <!-- Mobile nav bar -->
-      </header>
+      <!-- Mobile nav bar -->
+    </header>
         <section class="lg:pt-16 mt-10 pt-10 pb-10 mx-10 lg:mx-auto bg-none lg:bg-purple lg:w-max lg:grid  rounded-xl text-white text-center">
           <h1 class="lg:text-[2.5rem] text-[1.3rem] lg:w-[700px]  mx-auto font-semibold">You have been successfully added to the Trixrewrd waitlist</h1>
           <p class="lg:text-[1rem] lg:w-[700px] mx-auto lg:px-10 px-5  pt-2 text-[.5rem]">Use the code below to refer friends and increase your chances of earning more TRIX Points</p>
@@ -81,5 +76,8 @@
               <img class="lg:w-[40px] w-[15px]" src="/svg/wmusic.svg" alt="">
             </div>
           </div>
+
+     
+
 </body>
 </html>
