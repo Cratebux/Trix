@@ -7,23 +7,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/edd99ad8ab.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <link href="/src/output.css" rel="stylesheet" />
     <title>Trix - Waitlist Home</title>
   </head>
 
   <body
-    class="bg-purplebg text-white max-w-[100vw] lg:max-h-[150vh] overflow-x-hidden">
-    <header class="header-paddings flex items-center justify-between">
-      <img class="w-40" src="/svg/logo-trix-white.svg" alt="trix logo" />
-      <div class="flex items-center gap-8">
-        <a class="hover:underline" href="/src/pages/about.html">About</a>
-        <img width="40" src="/svg/histogram.svg" alt="histogram svg" />
+    class="bg-purplebg text-white max-w-[100vw] lg:max-h-[150vh] overflow-x-hidden"
+  >
+    <header
+      class="header-paddings text-white flex items-center justify-between"
+    >
+      <a href="/waitlist/index.html">
+        <img
+          class="lg:w-[5rem] w-[2rem]"
+          src="/svg/wlogo.svg"
+          alt="trix logo"
+        />
+      </a>
+      <nav class="hidden lg:inline-block">
+        <ul class="flex items-center text-xl gap-6 mr-6">
+          <li>About</li>
+          <li><a href="/waitlist/tasks.html">Tasks</a></li>
+          <li class="mr-10"><a href="/waitlist/survey.html">Surveys</a></li>
+          <li>
+            <!-- <a href="/src/pages/sign-up.html">
+                  <img class="w-[3rem]" src="/svg/bar.svg" alt="">
+                </a> -->
+            <button
+              id="dropdownBottomButton"
+              data-dropdown-toggle="dropdownBottom"
+              data-dropdown-placement="bottom"
+              class="text-center inline-flex items-center"
+              type="button"
+            >
+              <!-- <a href=""> -->
+              <img class="w-[3rem]" src="/svg/bar.svg" alt="" />
+              <!-- </a> -->
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownBottom"
+              class="text-center hidden absolute bg-Mpurple pt-5 pb-5 rounded-lg shadow w-[20rem] px-5"
+            >
+              <h1 class="text-xl font-bold">Current Rankings</h1>
+              <p class="text-[.9rem]">3 Days to go</p>
+              <div class="flex justify-between gap-10 items-center">
+                <span class="flex gap-3 items-center">
+                  <img class="w-[2rem]" src="/svg/wicon.svg" alt="" />
+                  <p class="text-[.9rem]"><span>#1</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img class="w-[2rem]" src="/svg/wicon.svg" alt="" />
+                  <p class="text-[.9rem]"><span>#2</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img
+                    class="w-[2rem]"
+                    src="/waitlist-assets/user2.svg"
+                    alt=""
+                  />
+                  <p class="text-[.9rem]"><span>#3</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img class="w-[2rem]" src="/svg/wicon.svg" alt="" />
+                  <p class="text-[.9rem]"><span>#4</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img
+                    class="w-[2rem]"
+                    src="/waitlist-assets/user2.svg"
+                    alt=""
+                  />
+                  <p class="text-[.9rem]"><span>#5</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img
+                    class="w-[2rem]"
+                    src="/waitlist-assets/user2.svg"
+                    alt=""
+                  />
+                  <p class="text-[.9rem]"><span>#6</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img
+                    class="w-[2rem]"
+                    src="/waitlist-assets/user2.svg"
+                    alt=""
+                  />
+                  <p class="text-[.9rem]"><span>#7</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img
+                    class="w-[2rem]"
+                    src="/waitlist-assets/user2.svg"
+                    alt=""
+                  />
+                  <p class="text-[.9rem]"><span>#8</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img
+                    class="w-[2rem]"
+                    src="/waitlist-assets/user2.svg"
+                    alt=""
+                  />
+                  <p class="text-[.9rem]"><span>#9</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between gap-10 mt-5 items-center">
+                <span class="flex gap-3 items-center">
+                  <img
+                    class="w-[2rem]"
+                    src="/waitlist-assets/user2.svg"
+                    alt=""
+                  />
+                  <p class="text-[.9rem]"><span>#10</span> John Doe</p>
+                </span>
+                <span class="flex items-center gap-1">
+                  <h1 class="text-[.9rem]">200pts</h1>
+                  <img class="w-[1rem]" src="/svg/Polygon.svg" alt="" />
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile nav bar -->
+      <div class="lg:hidden z-10">
+        <button class="openBtn size-10">
+          <img
+            class="modalOpen"
+            src="/svg/icon-hamburger-dark.svg"
+            alt="icon hamburger"
+          />
+        </button>
+        <button class="closeBtn hidden relative z-30 size-10">
+          <img src="/svg/icon-close-dark.svg" alt="icon close" />
+        </button>
+        <ul
+          class="menu hidden flex-col z-20 text-left justify-center px-5 text-white gap-6 absolute h-[13rem] py-5 top-5 mx-5 left-0 right-0 bg-Darkpurple rounded"
+        >
+          <h1 class="text-2xl">Menu</h1>
+          <li><a href="/src/pages/home.html">About</a></li>
+          <li><a href="/waitlist/tasks.html">Tasks</a></li>
+          <li class="bg-Mpurple py-2 pl-5 rounded">
+            <a href="/waitlist/survey.html">Surveys</a>
+          </li>
+        </ul>
       </div>
+      <!-- Mobile nav bar -->
     </header>
 
     <section
-      class="relative text-center lg:space-y-10 space-y-6 md:px-10 md:pt-14 pt-10 px-6">
+      class="relative text-center lg:space-y-10 space-y-6 md:px-10 md:pt-14 pt-10 px-6"
+    >
       <h1 class="lg:text-5xl md:text-4xl text-3xl font-semibold">
         Unlock Rewards <br />
         for Every Purchase
@@ -37,18 +227,21 @@
 
       <button
         onclick='window.location.href = "/waitlist/sign-up.html"'
-        class="text-purple bg-white px-6 py-3 rounded-lg">
+        class="text-purple bg-white px-6 py-3 rounded-lg"
+      >
         Join Our Waitlist
       </button>
       <div class="relative">
         <img
           class="mx-auto lg:w-[80%] w-full"
           src="/waitlist-assets/home-image.png"
-          alt="image" />
+          alt="image"
+        />
       </div>
 
       <div
-        class="lg:absolute z-10 bottom-0 left-0 right-0 w-full flex flex-col md:flex-row gap-4 items-center justify-between header-paddings">
+        class="lg:absolute z-10 bottom-0 left-0 right-0 w-full flex flex-col md:flex-row gap-4 items-center justify-between header-paddings"
+      >
         <p>&2024 Trix. All rights reverved</p>
         <ul class="flex items-center justify-center gap-6">
           <li>
@@ -73,6 +266,49 @@
           </li>
         </ul>
       </div>
+
+      <dialog
+        class="menuModal rounded-lg backdrop-filter-none bg-purple w-[90%] lg:w-[50vw] text-center"
+      >
+        <ul
+          class="menu flex-col space-y-5 z-20 text-left justify-center px-5 text-white gap-6 h-[13rem] py-5 top-5 left-0 right-0 bg-Darkpurple rounded"
+        >
+          <div class="flex justify-between">
+            <h1 class="text-2xl">Menu</h1>
+            <button class="modalClose">
+              <img src="/svg/icon-close-dark.svg" alt="icon close" />
+            </button>
+          </div>
+          <li><a href="/src/pages/home.html">About</a></li>
+          <li><a href="/waitlist/tasks.html">Tasks</a></li>
+          <li class="bg-Mpurple py-2 pl-5 rounded">
+            <a href="/waitlist/survey.html">Surveys</a>
+          </li>
+        </ul>
+      </dialog>
+
+      <script>
+        let modal = document.querySelector(".menuModal");
+        let modalOpen = document.querySelector(".modalOpen");
+        // let modalOpens = document.querySelector(".modalOpen1");
+        let modalClose = document.querySelector(".modalClose");
+        // function open(){
+        //   modal.showModal()
+        // }
+        modalOpen.addEventListener("click", () => {
+          modal.showModal();
+        });
+        // modalOpens.addEventListener("click", () => {
+        //   modal.showModal();
+        // });
+
+        modalClose.addEventListener("click", () => {
+          modal.close();
+          // setTimeout(() => {
+          //   window.location.href = "/waitlist/wallet.html";
+          // }, 2000);
+        });
+      </script>
     </section>
   </body>
 </html>

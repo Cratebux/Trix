@@ -14,18 +14,46 @@
     <!-- Font Awesome -->
 
     <link href="/src/output.css" rel="stylesheet" />
+    <script defer src="/waitlist/app.js"></script>
     <script async src="/waitlist/vote.js"></script>
     <title>Trix - Waitlist Vote</title>
   </head>
 
   <body
     class="bg-purplebg text-white max-w-[100vw] lg:max-h-[150vh] overflow-x-hidden">
-    <header class="header-paddings flex items-center justify-between">
-      <img class="w-40" src="/svg/logo-trix-white.svg" alt="trix logo" />
-      <div class="flex items-center gap-8">
-        <a class="hover:underline" href="/src/pages/about.html">About</a>
-        <img width="40" src="/svg/histogram.svg" alt="histogram svg" />
-      </div>
+    <header class="header-paddings text-white flex items-center justify-between">
+      <a href="/waitlist/index.html">
+        <img class="lg:w-[5rem] w-[2rem]" src="/svg/wlogo.svg" alt="trix logo" />
+      </a>
+      <nav class="hidden lg:inline-block">
+        <ul class="flex items-center text-xl gap-6 mr-6">
+          <li>About</li>
+          <li><a href="/waitlist/tasks.html">Tasks</a></li>
+          <li class="mr-10"><a href="/waitlist/survey.html">Surveys</a></li>
+          <li>
+              <a href="/src/pages/sign-up.html">
+                  <img class="w-[3rem]" src="/svg/bar.svg" alt="">
+                </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile nav bar -->
+        <div class="lg:hidden z-10">
+          <button class="openBtn size-10">
+            <img src="/svg/icon-hamburger-dark.svg" alt="icon hamburger" />
+          </button>
+          <button class="closeBtn hidden relative z-30 size-10">
+            <img src="/svg/icon-close-dark.svg" alt="icon close" />
+          </button>
+          <ul
+            class="menu hidden flex-col z-20 text-left justify-center px-5 text-white gap-4 absolute h-[13rem] py-5 top-5 mx-5 left-0 right-0 bg-Darkpurple rounded ">
+            <h1 class="text-2xl">Menu</h1>
+            <li><a href="/src/pages/home.html">About</a></li>
+            <li class="bg-Mpurple py-2 pl-5 rounded"><a href="/waitlist/tasks.html">Tasks</a></li>
+            <li><a href="/waitlist/survey.html">Surveys</a></li>
+          </ul>
+        </div>
+      <!-- Mobile nav bar -->
     </header>
 
     <section
@@ -40,14 +68,14 @@
       <div
         class="lg:p-10 p-6 flex items-center justify-center [&_button]:text-white">
         <button class="ton voteBtn -mr-2">
-          <img width="200" src="/waitlist-assets/ton.svg" alt="ton" />
+          <img class="w-[4rem]" src="/waitlist-assets/ton.svg" alt="ton" />
         </button>
-        <div class="w-[40%] h-fit flex justify-stretch">
+        <div class="w-[60%] h-fit flex justify-stretch">
           <span class="tonVal w-1/2 p-2 h-full bg-sky-600">20</span>
           <span class="notCoinVal w-1/2 p-2 h-full bg-black">30</span>
         </div>
         <button class="notCoin voteBtn -ml-2">
-          <img width="200" src="/waitlist-assets/not-coin.svg" alt="not coin" />
+          <img class="w-[4rem]" src="/waitlist-assets/not-coin.svg" alt="not coin" />
         </button>
       </div>
 
@@ -109,7 +137,7 @@
           </button>
           <!-- outline-0 border-0 -->
           <input
-            class="user-code bg-transparent border-0 p-0 w-fit text-center md:text-left"
+            class="user-code bg-transparent flex justify-center border-0 p-0 w-fit text-center md:text-left"
             value="TEXJD#12345"
             readonly="readonly"
             type="text" />

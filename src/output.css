@@ -629,20 +629,20 @@ video {
   top: 50%;
 }
 
-.top-10{
-  top: 2.5rem;
-}
-
 .top-40{
   top: 10rem;
+}
+
+.top-5{
+  top: 1.25rem;
 }
 
 .top-\[20\%\]{
   top: 20%;
 }
 
-.top-5{
-  top: 1.25rem;
+.top-20{
+  top: 5rem;
 }
 
 .-z-10{
@@ -1001,16 +1001,16 @@ video {
   height: 12rem;
 }
 
+.h-\[13rem\]{
+  height: 13rem;
+}
+
 .h-\[1px\]{
   height: 1px;
 }
 
 .h-\[1rem\]{
   height: 1rem;
-}
-
-.h-\[20rem\]{
-  height: 20rem;
 }
 
 .h-\[220px\]{
@@ -1167,6 +1167,10 @@ video {
   width: 20vw;
 }
 
+.w-\[21rem\]{
+  width: 21rem;
+}
+
 .w-\[230px\]{
   width: 230px;
 }
@@ -1221,10 +1225,6 @@ video {
 
 .w-\[50\%\]{
   width: 50%;
-}
-
-.w-\[5rem\]{
-  width: 5rem;
 }
 
 .w-\[60\%\]{
@@ -1298,16 +1298,40 @@ video {
   width: 100vw;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[4ren\]{
+  width: 4ren;
+}
+
+.w-\[4rem\]{
+  width: 4rem;
+}
+
+.w-\[0\%\]{
+  width: 0%;
+}
+
+.w-\[550\%\]{
+  width: 550%;
+}
+
+.w-\[55\%\]{
+  width: 55%;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }
 
 .max-w-\[100vw\]{
   max-width: 100vw;
-}
-
-.max-w-screen-xl{
-  max-width: 1280px;
 }
 
 .shrink-0{
@@ -1336,6 +1360,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .list-none{
@@ -1660,6 +1688,10 @@ video {
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-t-0{
+  border-top-width: 0px;
 }
 
 .border-dotted{
@@ -2109,6 +2141,10 @@ video {
 
 .ps-3{
   padding-inline-start: 0.75rem;
+}
+
+.ps-5{
+  padding-inline-start: 1.25rem;
 }
 
 .pt-10{
@@ -2887,11 +2923,6 @@ h3 {
   background-color: #8a2be214;
 }
 
-.hover\:bg-purple:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(103 57 157 / var(--tw-bg-opacity));
-}
-
 .hover\:pb-3:hover{
   padding-bottom: 0.75rem;
 }
@@ -3272,6 +3303,10 @@ h3 {
     width: 50vw;
   }
 
+  .lg\:w-\[5rem\]{
+    width: 5rem;
+  }
+
   .lg\:w-\[60\%\]{
     width: 60%;
   }
@@ -3588,15 +3623,6 @@ h3 {
   .peer:checked ~ .dark\:peer-checked\:text-blue-500{
     --tw-text-opacity: 1;
     color: rgb(59 130 246 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 768px){
-  @media (prefers-color-scheme: dark){
-    .md\:dark\:hover\:text-white:hover{
-      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity));
-    }
   }
 }
 

@@ -118,6 +118,8 @@ dialog::backdrop {
   -webkit-backdrop-filter: blur(4.5px);
 }
 
+
+
 .ParentDiv li::marker {
   @apply lg:text-5xl text-3xl;
 }
