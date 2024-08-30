@@ -20,12 +20,14 @@
   </head>
 <body class="bg-Lpurple">
     <header class="header-paddings text-white flex items-center justify-between">
-        <img class="w-[2rem] lg:w-[5rem] flex" src="/svg/wlogo.svg" alt="trix logo" />
+        <a href="/waitlist/index.html">
+          <img class="lg:w-[5rem] w-[2rem]" src="/svg/wlogo.svg" alt="trix logo" />
+        </a>
         <nav class="hidden lg:inline-block">
           <ul class="flex items-center text-xl gap-6 mr-6">
             <li>About</li>
-            <li>Tasks</li>
-            <li class="mr-10">Surveys</li>
+            <li><a href="/waitlist/tasks.html">Tasks</a></li>
+            <li class="mr-10"><a href="/waitlist/survey.html">Surveys</a></li>
             <li>
                 <a href="/src/pages/sign-up.html">
                     <img class="w-[3rem]" src="/svg/bar.svg" alt="">
@@ -42,7 +44,7 @@
               <img src="/svg/icon-close-dark.svg" alt="icon close" />
             </button>
             <ul
-              class="menu hidden flex-col z-20 text-left justify-center px-5 text-white gap-4 absolute h-[10rem] py-5 top-5 mx-5 left-0 right-0 bg-Darkpurple rounded ">
+              class="menu hidden flex-col z-20 text-left justify-center px-5 text-white gap-4 absolute h-[13rem] py-5 top-5 mx-5 left-0 right-0 bg-Darkpurple rounded ">
               <h1 class="text-2xl">Menu</h1>
               <li><a href="/src/pages/home.html">About</a></li>
               <li class="bg-Mpurple py-2 pl-5 rounded"><a href="/waitlist/tasks.html">Tasks</a></li>
@@ -51,48 +53,127 @@
           </div>
         <!-- Mobile nav bar -->
       </header>
-      <div class="flex items-end lg:px-20">
+      <div class="flex justify-center items-end lg:px-20">
         <div class="grid">
           <img class="w-[300px] hidden lg:flex " src="/svg/wleft.svg" alt="">
           <p class="text-white hidden lg:flex pt-10">&2024 Trix. All rights reserved</p>
         </div>
         <section class="mt-10 text-white text-center">
-          <h1 class="lg:text-[3.5rem] text-[1.7rem] px-10 lg:w-8/12 mx-auto font-semibold">Complete Challenges and Earn More Points</h1>
-          <p class="lg:text-[1rem] text-[.4rem]">Boost your chances of receiving your your desired reward by completing various tasks.</p>
-        
-          <div class="lg:pt-16 pt-10 flex justify-center lg:[text-1rem] text-[.7rem] gap-3 pb-3">
-              <button  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white ">One-Time Tasks</button>
-              <button  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white bg-purple">Daily Tasks</button>
-              <button  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white ">Competed Tasks</button>
-              
-          </div>
-          <div id="More" class="lg:w-[700px] w-[350] lg:h-[240] rounded-xl p-5 mx-auto bg-purple scroll overflow-y-scroll text-left">
-              <div class="grid">
-                <div class="flex items-center gap-2">
-                  <h1 class="lg:text-[1rem] text-[.7rem]">Share on Social Media</h1><button class="modalOpen">></button>
+<div id="accordion-collapse" data-accordion="collapse">
+  <div class="lg:pt-16 pt-10 flex mx-auto text-white justify-center lg:[text-1rem] text-[.7rem] gap-3 pb-10">
+    <h2 id="accordion-collapse-heading-1">
+      <button type="button" class="text-white" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white bg-purplebg ">One-Time Tasks</span>
+      </button>
+    </h2>
+    <h2 id="accordion-collapse-heading-1">
+      <button type="button" class="text-white" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
+      <span  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white bg-purple">Daily Tasks</span>
+      </button>
+    </h2>
+    <h2 id="accordion-collapse-heading-1">
+      <button type="button" class="text-white" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
+        <span  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 bg-purplebg border-white ">Competed Tasks</span>
+      </button>
+    </h2>
+  </div>
 
-                </div>
-                  <div class="flex justify-between items-center lg:pt-3 ">
-                      <p class="lg:text-[.8rem] text-[.3rem]">Share post on your socials and earn <span class="font-semibold">10 points,</span> getting you closer to your desired reward.</p>
-                      <h1 class="lg:text-[1rem]  text-[.6rem]">1<span></span>/1</h1>
-                  </div>
-                  <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
-              </div>
-              <div class="grid pt-5">
-                <div class="flex items-center gap-2">
-                  <h1 class="lg:text-[1rem] text-[.7rem]">Invite 5 New Friends</h1>
-                  <button class="modalOpen1">></button>
+  <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div class="lg:w-[700px] w-[350] lg:h-[240] rounded-xl text-white  p-5 mx-auto bg-purple scroll overflow-y-scroll text-left">
+            <div class="grid">
+              <div class="flex items-center gap-2">
+                <h1 class="lg:text-[1rem] text-[.7rem]">Share on Social Media</h1><button class="modalOpen">></button>
 
-                </div>
-                  <div class="flex justify-between lg:pt-3">
-                      <p class="lg:text-[.8rem] text-[.3rem]">invite 5 New Friends to join trix and earn <span class="font-semibold">50 points,</span> getting you closer to your desired reward.</p>
-                      <h1 class="lg:text-[1rem]  text-[.6rem]"><span>1</span>/5</h1>
-                  </div>
-                  <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
               </div>
-              <h1 class="font-bold pt-5">Complete 5 Surveys</h1>
-          </div>
-          </section>
+                <div class="flex justify-between items-center lg:pt-3 ">
+                    <p class="lg:text-[.8rem] text-[.3rem]">Share post on your socials and earn <span class="font-semibold">10 points,</span> getting you closer to your desired reward.</p>
+                    <h1 class="lg:text-[1rem]  text-[.6rem]">1<span></span>/1</h1>
+                </div>
+                <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+            </div>
+            <div class="grid pt-5">
+              <div class="flex items-center gap-2">
+                <h1 class="lg:text-[1rem] text-[.7rem]">Invite 5 New Friends</h1>
+                <button class="modalOpen1">></button>
+              </div>
+                <div class="flex justify-between lg:pt-3">
+                    <p class="lg:text-[.8rem] text-[.3rem]">invite 5 New Friends to join trix and earn <span class="font-semibold">50 points,</span> getting you closer to your desired reward.</p>
+                    <h1 class="lg:text-[1rem]  text-[.6rem]"><span>1</span>/5</h1>
+                </div>
+                <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+            </div>
+  </div>
+  <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+    <div class="lg:w-[700px] w-[350] lg:h-[240] rounded-xl text-white  p-5 mx-auto bg-purple scroll overflow-y-scroll text-left">
+            <div class="grid">
+              <div class="flex items-center gap-2">
+                <h1 class="lg:text-[1rem] text-[.7rem]">Share on Social Media</h1><button class="modalOpen">></button>
+              </div>
+                <div class="flex justify-between items-center lg:pt-3 ">
+                    <p class="lg:text-[.8rem] text-[.3rem]">Share post on your socials and earn <span class="font-semibold">10 points,</span> getting you closer to your desired reward.</p>
+                    <h1 class="lg:text-[1rem]  text-[.6rem]">1<span></span>/1</h1>
+                </div>
+                <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+            </div>
+            <div class="grid pt-5">
+              <div class="flex items-center gap-2">
+                <h1 class="lg:text-[1rem] text-[.7rem]">Invite 5 New Friends</h1>
+                <button class="modalOpen1">></button>
+              </div>
+                <div class="flex justify-between lg:pt-3">
+                    <p class="lg:text-[.8rem] text-[.3rem]">invite 5 New Friends to join trix and earn <span class="font-semibold">50 points,</span> getting you closer to your desired reward.</p>
+                    <h1 class="lg:text-[1rem]  text-[.6rem]"><span>1</span>/5</h1>
+                </div>
+                <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+            </div>
+  </div>
+  <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+    <div class="lg:w-[700px]  w-[350] lg:h-[240] rounded-xl text-white  p-5 mx-auto bg-purple scroll overflow-y-scroll text-left">
+            <div class="grid">
+              <div class="flex items-center gap-2">
+                <h1 class="lg:text-[1rem] text-[.7rem]">Share on Social Media</h1><button class="modalOpen">></button>
+              </div>
+                <div class="flex justify-between items-center lg:pt-3 ">
+                    <p class="lg:text-[.8rem] text-[.3rem]">Share post on your socials and earn <span class="font-semibold">10 points,</span> getting you closer to your desired reward.</p>
+                    <h1 class="lg:text-[1rem]  text-[.6rem]">1<span></span>/1</h1>
+                </div>
+                <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+            </div>
+            <div class="grid pt-5">
+              <div class="flex items-center gap-2">
+                <h1 class="lg:text-[1rem] text-[.7rem]">Invite 5 New Friends</h1>
+                <button class="modalOpen1">></button>
+              </div>
+                <div class="flex justify-between lg:pt-3">
+                    <p class="lg:text-[.8rem] text-[.3rem]">invite 5 New Friends to join trix and earn <span class="font-semibold">50 points,</span> getting you closer to your desired reward.</p>
+                    <h1 class="lg:text-[1rem]  text-[.6rem]"><span>1</span>/5</h1>
+                </div>
+                <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+            </div>
+  </div>
+  <h2 id="accordion-collapse-heading-3">
+    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+      <span>What are the differences between Flowbite and Tailwind UI?</span>
+      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+      <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+      <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+      <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+      <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+        <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+        <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+          
         <div>
           <img class="w-[300px] hidden" src="/svg/wright.svg" alt="">
           <div class="lg:flex gap-3 hidden pt-10">
@@ -112,7 +193,6 @@
           <img class="lg:w-[40px] w-[15px]" src="/svg/wmusic.svg" alt="">
         </div>
       </div>
-
            <dialog
       class="modal rounded-lg backdrop-filter-none bg-purple text-white w-[90%] lg:w-[50vw] text-center space-y-10 px-5">
       <section class="lg:pt-16 lg:mx-auto bg-none lg:bg-purple lg:w-max lg:grid  rounded-xl text-white text-center py-10">
@@ -126,7 +206,16 @@
           <p><span class="font-semibold">3. Tag Friends:</span> Tag at least two friends in your comment.</p>
           <p><span class="font-semibold">4. Earn points:</span> Earn 10 TRIX Points for each post you engage with.</p>
 
-
+          <button class="modalClose flex mx-auto mt-10 rounded-md">
+            Go to Dashboard
+            <span
+              ><img
+                class="inline-block ms-2"
+                width="25"
+                src="/waitlist-assets/arrow-white.svg"
+                alt="arrow icon"
+            /></span>
+          </button>
 
         </div>
         <div class="text-right flex items-center justify-center lg:gap-3 gap-3 pt-10">
@@ -137,11 +226,30 @@
         </div>
         </section>
     </dialog>
+    <dialog
+        class="menuModal rounded-lg backdrop-filter-none bg-purple w-[90%] lg:w-[50vw] text-center"
+      >
+        <ul
+          class="menu flex-col space-y-5 z-20 text-left justify-center px-5 text-white gap-6 h-[13rem] py-5 top-5 left-0 right-0 bg-Darkpurple rounded"
+        >
+          <div class="flex justify-between">
+            <h1 class="text-2xl">Menu</h1>
+            <button class="modalClose">
+              <img src="/svg/icon-close-dark.svg" alt="icon close" />
+            </button>
+          </div>
+          <li><a href="/src/pages/home.html">About</a></li>
+          <li><a href="/waitlist/tasks.html">Tasks</a></li>
+          <li class="bg-Mpurple py-2 pl-5 rounded">
+            <a href="/waitlist/survey.html">Surveys</a>
+          </li>
+        </ul>
+      </dialog>
     <script>
       let modal = document.querySelector('.modal');
       let modalOpen = document.querySelector('.modalOpen');
       let modalOpens = document.querySelector('.modalOpen1');
-
+      let modalClose = document.querySelector('.modalClose');
       // function open(){
       //   modal.showModal()
       // }
@@ -152,6 +260,13 @@
       modalOpens.addEventListener('click', () => {
         modal.showModal();
        
+      });
+
+      modalClose.addEventListener('click', () => {
+        modal.close();
+        setTimeout(() => {
+          window.location.href = '/waitlist/wallet.html';
+        }, 2000);
       });
 
     </script>

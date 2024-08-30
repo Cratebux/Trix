@@ -20,12 +20,14 @@
   </head>
 <body class="bg-Lpurple">
     <header class="header-paddings text-white flex items-center justify-between">
+      <a href="/waitlist/index.html">
         <img class="lg:w-[5rem] w-[2rem]" src="/svg/wlogo.svg" alt="trix logo" />
+      </a>
         <nav class="hidden lg:inline-block">
           <ul class="flex items-center text-xl gap-6 mr-6">
             <li>About</li>
-            <li>Tasks</li>
-            <li class="mr-10">Surveys</li>
+            <li><a href="/waitlist/tasks.html">Tasks</a></li>
+            <li class="mr-10"><a href="/waitlist/survey.html">Surveys</a></li>
             <li>
                 <!-- <a href="/src/pages/sign-up.html">
                     <img class="w-[3rem]" src="/svg/bar.svg" alt="">
@@ -101,7 +103,7 @@
             <img src="/svg/icon-close-dark.svg" alt="icon close" />
           </button>
           <ul
-            class="menu hidden flex-col z-20 text-left justify-center px-5 text-white gap-6 absolute h-[10rem] py-5 top-5 mx-5 left-0 right-0 bg-Darkpurple rounded ">
+            class="menu hidden flex-col z-20 text-left justify-center px-5 text-white gap-6 absolute h-[13rem] py-5 top-5 mx-5 left-0 right-0 bg-Darkpurple rounded ">
             <h1 class="text-2xl">Menu</h1>
             <li><a href="/src/pages/home.html">About</a></li>
             <li><a href="/waitlist/tasks.html">Tasks</a></li>
@@ -155,7 +157,7 @@
         </div>
       </div>
       <dialog
-      class="modal rounded-lg lg:hidden backdrop-filter-none bg-purple text-white w-[90%] lg:w-[50vw] text-center space-y-10 px-5">
+      class="modal rounded-lg backdrop-filter-none bg-purple text-white w-[90%] lg:w-[50vw] text-center space-y-10 px-5">
         <section class="lg:pt-16 mt-10 pt-10 pb-10 mx-10 lg:mx-auto bg-none lg:bg-purple lg:w-max lg:grid  rounded-xl text-white text-center">
           <h1 class="lg:text-[2.5rem] text-[1.3rem] lg:w-[500px]  mx-auto font-semibold">Invite friends to Join Trixrewrd</h1>
           <p class="lg:text-[1rem] lg:w-[600px] mx-auto lg:px-10 px-5  pt-2 text-[.5rem]">Share your unique referral link with friends and earn 25 TRIX Points for each successful referral.</p>
@@ -167,6 +169,16 @@
             </span>
             <h1 class="bg-white lg:text-1rem text-[.8rem] rounded-tr rounded-br text-Mpurple p-2 lg:p-5 text">Share Code</h1>
           </div>
+          <button class="modalClose outline-none border-none mt-10 rounded-md">
+            Go to Dashboard
+            <span
+              ><img
+                class="inline-block ms-2"
+                width="25"
+                src="/waitlist-assets/arrow-white.svg"
+                alt="arrow icon"
+            /></span>
+          </button>
           <div class="text-right flex justify-center lg:gap-3 gap-1 pt-10">
             <img class="lg:w-[40px] w-[15px]" src="/svg/wfacebook.svg" alt="">
             <img class="lg:w-[40px] w-[15px]" src="/svg/wx.svg" alt="">
@@ -178,7 +190,7 @@
     <script>
       let modal = document.querySelector('.modal');
       let modalOpen = document.querySelector('.modalOpen');
-
+      let modalClose = document.querySelector('.modalClose');
       // function open(){
       //   modal.showModal()
       // }
@@ -189,6 +201,12 @@
       modalOpens.addEventListener('click', () => {
         modal.showModal();
        
+      });
+      modalClose.addEventListener('click', () => {
+        modal.close();
+        setTimeout(() => {
+          window.location.href = '/waitlist/wallet.html';
+        }, 2000);
       });
 
     </script>
