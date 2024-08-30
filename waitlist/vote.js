@@ -40,10 +40,10 @@ async function fetchVotes() {
 
     const totalVotes = tonVotes + notcoinVotes;
     const tonPercentage = totalVotes
-      ? ((tonVotes / totalVotes) * 100).toFixed(2)
+      ? ((tonVotes / totalVotes) * 100).toFixed()
       : 0;
     const notcoinPercentage = totalVotes
-      ? ((notcoinVotes / totalVotes) * 100).toFixed(2)
+      ? ((notcoinVotes / totalVotes) * 100).toFixed()
       : 0;
     document.querySelector('.tonVal').innerHTML = `${tonPercentage}%`;
 
