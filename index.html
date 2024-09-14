@@ -150,15 +150,9 @@
         </div>
       </div>
 
-      <!-- <div class="lg:w-1/2">
-        width="651.36px"
-        height="912px"
-        <img src="/img/Banner (Deep Black).png" alt="smiling lady" />
-      </div> -->
-
       <div
         id="dafault-carousel"
-        class="lg:relative lg:w-1/2 h-[900px] lg:h-auto"
+        class="lg:relative lg:w-1/2 md:w-[90%] md:mx-auto h-[600px] md:h-[900px] max-h-[1200px] lg:h-auto"
         data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-full overflow-hidden">
@@ -166,21 +160,21 @@
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/img/carousel-image-1.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              class="w-full h-full object-cover"
               alt="..." />
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/img/carousel-image-2.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              class="w-full h-full object-cover"
               alt="..." />
           </div>
           <!-- Item 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/img/carousel-image-3.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              class="w-full h-full object-cover"
               alt="..." />
           </div>
         </div>
@@ -188,8 +182,6 @@
     </section>
 
     <section id="how-it-works" class="paddings grid">
-      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-
       <div class="text-center pt-10">
         <p
           class="border-Dpurple mx-auto font-bold bg-Hgrey border-2 border-dotted px-3 py-2 rounded-full inline">
@@ -248,24 +240,161 @@
       </div>
     </section>
 
-    <section class="flex lg:flex-row flex-col h-fit">
-      <img class="lg:w-[40%]" src="/img/dude-smiling.png" alt="dude smiling" />
+    <section class="grid md:grid-cols-2 h-max">
+      <div
+        id="dafault-carousel"
+        class="lg:relative md:mx-auto w-full h-[70vh] md:h-auto"
+        data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-full overflow-hidden">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item>
+            <img
+              src="/img/carousel-image-4.png"
+              class="w-full h-full object-cover"
+              alt="..." />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/img/carousel-image-5.png"
+              class="w-full h-full object-cover"
+              alt="..." />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/img/carousel-image-6.png"
+              class="w-full h-full object-cover"
+              alt="..." />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/img/carousel-image-7.png"
+              class="w-full h-full object-cover"
+              alt="..." />
+          </div>
+        </div>
+      </div>
 
       <div
-        class="testimony lg:w-[60%] gap-8 paddings flex flex-col items-start text-center lg:text-left justify-evenly">
-        <img width="50" height="50" src="/svg/quote.svg" alt="quote" />
-        <h2 class="lg:text-5xl md:text-3xl text-2xl mt-8 lg:mt-0 font-medium">
-          Since using Trix, I've earned incredible rewards for my everyday
-          purchases!
-        </h2>
-        <div class="lg:text-3xl text-xl inline-block mx-auto lg:block lg:mx-0">
-          Sarah J.
+        id="controls-carousel"
+        class="relative w-full bg-black"
+        data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div
+          class="relative flex items-stretch h-[70vh] overflow-hidden md:h-[76vh]">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active">
+            <div
+              class="testimony w-full gap-8 paddings h-full flex flex-col items-start text-center lg:text-left justify-evenly">
+              <img width="50" height="50" src="/svg/quote.svg" alt="quote" />
+              <h2
+                class="lg:text-4xl md:text-3xl text-2xl mt-8 lg:mt-0 font-medium">
+                Since using Trix, I've earned incredible rewards for my everyday
+                purchases!
+              </h2>
+              <div
+                class="lg:text-3xl text-xl inline-block mx-auto lg:block lg:mx-0">
+                Sarah J.
+              </div>
+              <span class="gap-3 flex mx-auto lg:mx-0">
+                <img src="/svg/rating.svg" alt="rating" />
+                <small class="underline text-base">Rating</small>
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="testimony2 w-full gap-8 paddings flex flex-col items-start text-center lg:text-left justify-evenly">
+              <img width="50" height="50" src="/svg/quote.svg" alt="quote" />
+              <h2
+                class="lg:text-4xl md:text-3xl text-2xl mt-8 lg:mt-0 font-medium">
+                Trix is a must-have! I love how I can discover new vendors and
+                deals while earning points for every purchase. Plus, the
+                community vibe is awesome!
+              </h2>
+              <div
+                class="lg:text-3xl text-xl inline-block mx-auto lg:block lg:mx-0">
+                Chinwe I.
+              </div>
+              <span class="gap-3 flex mx-auto lg:mx-0">
+                <img src="/svg/rating.svg" alt="rating" />
+                <small class="underline text-base">Rating</small>
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="testimony3 w-full gap-8 paddings flex flex-col items-start text-center lg:text-left justify-evenly">
+              <img width="50" height="50" src="/svg/quote.svg" alt="quote" />
+              <h2
+                class="lg:text-4xl md:text-3xl text-2xl mt-8 lg:mt-0 font-medium">
+                I’ve invited my friends to Trix, and we’re all earning points
+                together! The community is awesome, and the TRX points keep
+                adding up for bigger rewards.
+              </h2>
+              <div
+                class="lg:text-3xl text-xl inline-block mx-auto lg:block lg:mx-0">
+                Fatima S.
+              </div>
+              <span class="gap-3 flex mx-auto lg:mx-0">
+                <img src="/svg/rating.svg" alt="rating" />
+                <small class="underline text-base">Rating</small>
+              </span>
+            </div>
+          </div>
         </div>
-        <span class="gap-3 flex mx-auto lg:mx-0">
-          <img src="/svg/rating.svg" alt="rating" />
-          <small class="underline text-base">Rating</small>
-        </span>
-        <img src="/svg/line-arrow.svg" alt="line arrow" />
+
+        <!-- Slider controls -->
+        <div class="relative flex items-center gap-5 p-8 bg-black">
+          <hr class="border-t-2 w-[60%] text-white" />
+          <button
+            type="button"
+            class="flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10">
+              <svg
+                width="25"
+                height="20"
+                viewBox="0 0 25 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.1416 3.34996C10.703 2.78858 10.703 1.87841 10.1416 1.31703C9.58025 0.755651 8.67007 0.755651 8.1087 1.31703L0.44203 8.9837C0.161341 9.26439 0.0209961 9.63227 0.0209961 10.0002C0.0209961 10.1951 0.0597877 10.3809 0.130072 10.5504C0.200221 10.72 0.304208 10.8788 0.44203 11.0166L8.1087 18.6833C8.67007 19.2447 9.58025 19.2447 10.1416 18.6833C10.703 18.1219 10.703 17.2117 10.1416 16.6504L4.92893 11.4377H23.5002C24.2941 11.4377 24.9377 10.7941 24.9377 10.0002C24.9377 9.20625 24.2941 8.56266 23.5002 8.56266H4.92893L10.1416 3.34996Z"
+                  fill="white" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10">
+              <svg
+                width="42"
+                height="32"
+                viewBox="0 0 42 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.6541 5.01336C23.7266 4.08587 23.7266 2.5821 24.6541 1.65461C25.5816 0.727111 27.0854 0.727111 28.0129 1.65461L40.6795 14.3213C41.607 15.2488 41.607 16.7525 40.6795 17.68L28.0129 30.3467C27.0854 31.2742 25.5816 31.2742 24.6541 30.3467C23.7266 29.4192 23.7266 27.9154 24.6541 26.9879L33.2664 18.3757H2.5835C1.27182 18.3757 0.208496 17.3123 0.208496 16.0007C0.208496 14.689 1.27182 13.6257 2.5835 13.6257H33.2664L24.6541 5.01336Z"
+                  fill="white" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
       </div>
     </section>
 
