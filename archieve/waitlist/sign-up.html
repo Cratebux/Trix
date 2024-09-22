@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/svg/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Flowbite -->
+
+    <script
+      src="https://kit.fontawesome.com/edd99ad8ab.js"
+      crossorigin="anonymous"></script>
+      <script defer src="/waitlist/handleSubmit.js"></script>
+    <link href="/src/output.css" rel="stylesheet" />
+    <title>Trix - Waitlist Sign Up</title>
+  </head>
+
+  <body
+    class="bg-purplebg text-white max-w-[100vw] lg:max-h-[150vh] overflow-x-hidden">
+    <header class="header-paddings flex items-center justify-between">
+      <img class="w-40" src="/svg/logo-trix-white.svg" alt="trix logo" />
+      <div class="flex items-center gap-8">
+        <a class="hover:underline" href="/src/pages/about.html">About</a>
+        <img width="40" src="/svg/histogram.svg" alt="histogram svg" />
+      </div>
+    </header>
+
+    <section
+      class="relative lg:-mt-14 my-10 text-center space-y-6 md:px-10 md:pt-14 pt-10 px-6">
+      <h1 class="lg:text-5xl text-3xl font-semibold">
+        Sign Up for Trix Points
+      </h1>
+      <p class="lg:w-1/2 w-[80%] mx-auto text-sm">
+        Join the waitlist and start earning TRIX Points for exciting rewards!
+      </p>
+
+      <form
+        class="form lg:w-[40%] mx-auto flex text-white flex-col items-center gap-3 [&_input]:p-4 [&_input]:rounded-lg [&_input]:bg-[#0a0a0a66] [&_input]:pl-12 [&_input]:w-full [&_label]:hover:cursor-pointer">
+        <div class="w-full relative">
+          <label for="email">
+            <img
+              class="absolute top-1/2 -translate-y-1/2 left-4"
+              width="25"
+              src="/waitlist-assets/mail.svg"
+              alt="mail" />
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+            required />
+        </div>
+
+        <div class="w-full relative">
+          <label for="phone">
+            <img
+              class="absolute top-1/2 -translate-y-1/2 left-4"
+              width="20"
+              src="/waitlist-assets/phone.svg"
+              alt="mail" />
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="whatsapp-number"
+            minlength="11"
+            placeholder="WhatsApp Number"
+            required />
+        </div>
+
+        <select
+          id="user_preference"
+          class="bg-[#0a0a0a66] cursor-pointer mb-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
+          name="desc"
+          required>
+          <option selected disabled hidden>Which best describes you?</option>
+          <option
+            value="RS"
+            title="Trix users are always on the lookout for opportunities to earn rewards and get the most value out of their everyday transactions. They appreciate platforms that offer cashback, discounts, and loyalty points.">
+            Reward Seekers
+          </option>
+          <option
+            value="GATE"
+            title="Many Trix users are avid gamers and tech enthusiasts who enjoy staying ahead of the curve with the latest games, gadgets, and digital products. They value platforms that cater to their hobbies and offer relevant rewards.">
+            Gamers and Tech Enthusiasts
+          </option>
+          <option
+            value="SS"
+            title="Trix users are savvy shoppers who make informed purchasing decisions. They seek out deals and promotions and appreciate a platform that provides them with rewards for their regular shopping habits.">
+            Savvy Shoppers
+          </option>
+          <option
+            value="COI"
+            title="Trix users value being part of a community where they can share experiences, insights, and recommendations with like-minded individuals. They appreciate platforms that foster a sense of belonging and engagement.">
+            Community Oriented Individuals
+          </option>
+          <option
+            value="FCC"
+            title="Many Trix users are financially conscious and seek ways to maximize their savings. They prefer platforms that offer cashback and rewards for their spending, helping them manage their finances better.">
+            Financially Conscious Consumers
+          </option>
+          <option
+            value="EA"
+            title="Trix users are often early adopters of new technologies and platforms. They enjoy exploring innovative solutions that offer unique value propositions and are eager to try out new features and services.">
+            Early Adopters
+          </option>
+          <option
+            value="LC"
+            title="Trix users are loyal to brands and platforms that provide them with consistent value and excellent customer service. They appreciate being recognized and rewarded for their loyalty and continued patronage.">
+            Loyal Customers
+          </option>
+          <option
+            value="BP"
+            title="Many Trix users are busy professionals who value convenience and efficiency. They prefer platforms that simplify their lives, allowing them to earn rewards effortlessly through their everyday transactions.">
+            Busy Professionals
+          </option>
+          <option
+            value="DN"
+            title="Trix users are comfortable navigating digital platforms and leveraging technology to enhance their shopping and gaming experiences. They appreciate user-friendly interfaces and seamless integrations.">
+            Digital Natives
+          </option>
+          <option
+            value="VCC"
+            title="Trix users are value-conscious consumers who appreciate getting more for their money. They enjoy platforms that offer additional perks and benefits for their everyday spending, making their purchases more rewarding.">
+            Value-Conscious Consumers
+          </option>
+        </select>
+
+        <button
+          class="px-20 py-3 w-full font-semibold text-purple bg-white rounded-lg">
+          Sign Up
+          <img
+            class="inline-block ml-3"
+            width="25"
+            src="/waitlist-assets/arrow-right.svg"
+            alt />
+        </button>
+      </form>
+    </section>
+
+    <div
+      class="lg:absolute z-10 bottom-0 left-0 right-0 w-full flex flex-col md:flex-row gap-4 items-center justify-between header-paddings">
+      <p>&2024 Trix. All rights reverved</p>
+      <ul class="flex items-center justify-center gap-6">
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/facebook.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/twitter.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/instagram.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/tiktok.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <dialog
+      class="modal rounded-lg bg-purple text-white w-[90%] lg:w-[50vw] text-center space-y-10 px-16 py-20">
+      <h2 class="text-3xl font-semibold w-full">
+        You have been successfully <br />
+        added to the Trixreward waitlist
+      </h2>
+      <p>
+        Use the code below to refer friends and increase your chances of earning
+        more TRIX Points
+      </p>
+
+      <div
+        class="bg-[#00000080] relative w-full overflow-hidden space-y-6 md:space-y-0 md:w-[85%] mx-auto rounded-lg text-white py-3">
+        <div class="flex items-center gap-6">
+          <button class="copyBtn mx-6">
+            <img
+              src="/waitlist-assets/copy-icon.svg"
+              width="33"
+              alt="copy icon" />
+          </button>
+          <!-- outline-0 border-0 -->
+          <input
+            class="user-code bg-transparent border-0 p-0 w-fit text-center md:text-left"
+            value="TEXJD#12345"
+            readonly="readonly"
+            type="text" />
+        </div>
+        <button
+          class="md:absolute top-0 right-0 bottom-0 font-semibold bg-white px-8 py-3 h-full rounded-lg text-purple">
+          Share Code
+        </button>
+      </div>
+      <button class="modalClose mt-10 rounded-md">
+        Continue
+        <span
+          ><img
+            class="inline-block ms-2"
+            width="25"
+            src="/waitlist-assets/arrow-white.svg"
+            alt="arrow icon"
+        /></span>
+      </button>
+    </dialog>
+
+    <script>
+      let copyBtn = document.querySelector('.copyBtn');
+
+      function Copy() {
+        let targetText = document.querySelector('.user-code');
+        targetText.select();
+        targetText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(targetText.value);
+        alert(`User code ${targetText.value}, copied to clipboard `);
+        console.log(targetText.value);
+      }
+
+      copyBtn.addEventListener('click', () => Copy());
+    </script>
+  </body>
+</html>
